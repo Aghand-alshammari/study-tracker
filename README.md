@@ -1,3 +1,24 @@
-﻿# study-tracker
+# تقدّم | Taqaddum
 
-A simple project for tracking study progress, staying organized, and building consistent learning habits.
+صفحة هبوط عربية لتطبيق Android يساعد المتعلمين على تحديد أهدافهم الدراسية،
+تسجيل جلساتهم، ومتابعة تقدمهم باستمرار.
+
+## التقنيات
+
+- HTML5
+- CSS3
+- JavaScript
+
+المشروع مكتوب دون أطر عمل أو مكتبات خارجية، ولا يحتاج إلى تثبيت أي تبعيات.
+
+## التشغيل محليًا
+
+افتح ملف `index.html` مباشرة في أي متصفح حديث.
+
+## بنية المشروع
+
+```text
+index.html
+css/style.css
+js/main.js
+```
