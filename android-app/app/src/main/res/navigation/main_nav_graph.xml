@@ -1,0 +1,4 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_nav_graph" app:startDestination="@id/subjectsFragment">
+    <fragment android:id="@+id/subjectsFragment" android:name="com.taqaddum.app.ui.subjects.SubjectsFragment" android:label="@string/subjects"><action android:id="@+id/action_subjects_to_edit" app:destination="@id/editSubjectFragment"/></fragment>
+    <fragment android:id="@+id/editSubjectFragment" android:name="com.taqaddum.app.ui.subjects.EditSubjectFragment" android:label="@string/edit_subject"><argument android:name="subjectId" android:defaultValue="-1L" app:argType="long"/></fragment>
+</navigation>

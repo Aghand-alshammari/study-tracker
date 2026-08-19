@@ -1,0 +1,15 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/white">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:paddingHorizontal="20dp" android:paddingTop="28dp">
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/subjects" android:textColor="@color/text_primary" android:textSize="28sp" android:textStyle="bold"/>
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/subjects_subtitle" android:textColor="@color/text_secondary" android:textSize="15sp"/>
+  <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="20dp">
+   <androidx.recyclerview.widget.RecyclerView android:id="@+id/subjectsRecycler" android:layout_width="match_parent" android:layout_height="match_parent" android:clipToPadding="false" android:paddingBottom="88dp"/>
+   <LinearLayout android:id="@+id/emptyState" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical" android:padding="32dp">
+    <ImageView android:layout_width="56dp" android:layout_height="56dp" android:background="@drawable/bg_subject_icon" android:contentDescription="@null" android:padding="16dp" android:src="@drawable/ic_subject"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/no_subjects_title" android:textColor="@color/text_primary" android:textSize="18sp" android:textStyle="bold"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:gravity="center" android:text="@string/no_subjects_body" android:textColor="@color/text_secondary" android:textSize="14sp"/>
+   </LinearLayout>
+  </FrameLayout>
+ </LinearLayout>
+ <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton android:id="@+id/addSubjectButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|end" android:layout_margin="20dp" android:text="@string/add_subject" android:textColor="@color/text_primary" app:backgroundTint="@color/yellow_primary" app:icon="@drawable/ic_add" app:iconTint="@color/text_primary"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

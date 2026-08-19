@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">تقدّم</string><string name="subjects">المواد</string>
+    <string name="subjects_subtitle">نظّم أهدافك الأسبوعية وابدأ بخطوة صغيرة</string>
+    <string name="no_subjects_title">لا توجد مواد بعد</string><string name="no_subjects_body">أضف أول مادة وحدد الوقت الذي تريد دراسته كل أسبوع.</string>
+    <string name="add_subject">إضافة مادة</string><string name="edit_subject">تعديل المادة</string>
+    <string name="subject_name">اسم المادة</string><string name="weekly_target_hours">الهدف الأسبوعي بالساعات</string>
+    <string name="save">حفظ</string><string name="delete">حذف</string>
+    <string name="weekly_target_format">الهدف الأسبوعي: %1$d دقيقة</string>
+    <string name="name_required">اكتب اسم المادة</string><string name="target_invalid">أدخل عدد ساعات أكبر من صفر</string>
+    <string name="subject_saved">تم حفظ المادة</string><string name="subject_deleted">تم حذف المادة</string>
+</resources>

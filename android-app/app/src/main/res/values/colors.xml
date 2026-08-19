@@ -1,0 +1,6 @@
+<resources>
+    <color name="white">#FFFFFF</color><color name="yellow_primary">#FFC928</color>
+    <color name="yellow_light">#FFF9E6</color><color name="text_primary">#1F2937</color>
+    <color name="text_secondary">#6B7280</color><color name="border">#E5E7EB</color>
+    <color name="success">#22C55E</color><color name="error">#DC2626</color>
+</resources>
