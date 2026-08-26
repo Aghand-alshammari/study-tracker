@@ -22,7 +22,7 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="تقدّم، الصفحة الرئيسية">
+      <a class="brand" href="index.html" aria-label="تقدّم، الصفحة الرئيسية">
         <span class="brand-mark" aria-hidden="true"><span></span></span>
         <span class="brand-name">تقدّم <bdi lang="en">Taqaddum</bdi></span>
       </a>
@@ -30,10 +30,10 @@
         <span></span><span></span><span></span>
       </button>
       <nav id="main-navigation" class="site-nav" aria-label="التنقل الرئيسي">
-        <a href="#features">المميزات</a>
-        <a href="#how-it-works">كيف يعمل؟</a>
-        <a href="#about">من نحن</a>
-        <a href="#faq">الأسئلة الشائعة</a>
+        <a href="index.html" aria-current="page">الرئيسية</a>
+        <a href="features.html">المميزات</a>
+        <a href="how-it-works.html">كيف يعمل؟</a>
+        <a href="about.html">من نحن</a>
         <span class="nav-status" aria-label="التطبيق متاح قريبًا">متاح قريبًا</span>
       </nav>
     </div>
@@ -50,7 +50,7 @@
           <p>نظّم ما تتعلمه، سجّل جلساتك الدراسية، واعرف ما يحتاج إلى تركيز أكبر لتحافظ على استمراريتك وتصل إلى هدفك.</p>
           <div class="hero-actions">
             <button class="button button-primary" type="button" disabled><span aria-hidden="true">↙</span> متاح قريبًا على Android</button>
-            <a class="button button-secondary" href="#features">اكتشف المميزات</a>
+            <a class="button button-secondary" href="features.html">اكتشف المميزات</a>
           </div>
           <p class="hero-note"><span aria-hidden="true">✓</span> مناسب لكل شخص يتعلم، في أي مرحلة ومن أي مكان</p>
         </div>
@@ -223,10 +223,25 @@
 
   <footer class="site-footer">
     <div class="container footer-main">
-      <div><a class="brand" href="#top" aria-label="تقدّم، العودة إلى أعلى الصفحة"><span class="brand-mark" aria-hidden="true"><span></span></span><span class="brand-name">تقدّم <bdi lang="en">Taqaddum</bdi></span></a><p>رفيقك في رحلة التعلّم.</p></div>
-      <nav aria-label="روابط التذييل"><a href="#features">المميزات</a><a href="#how-it-works">طريقة الاستخدام</a><a href="#about">من نحن</a><a href="#faq">الأسئلة الشائعة</a></nav>
+      <div><a class="brand" href="index.html" aria-label="تقدّم، الصفحة الرئيسية"><span class="brand-mark" aria-hidden="true"><span></span></span><span class="brand-name">تقدّم <bdi lang="en">Taqaddum</bdi></span></a><p>رفيقك في رحلة التعلّم.</p></div>
+      <nav aria-label="روابط التذييل"><a href="features.html">المميزات</a><a href="how-it-works.html">طريقة الاستخدام</a><a href="about.html">من نحن</a><a href="about.html#faq">الأسئلة الشائعة</a></nav>
     </div>
     <div class="container footer-bottom"><p>© 2026 تقدّم. جميع الحقوق محفوظة.</p><p>صُمّم لمساعدتك على الاستمرار <span aria-hidden="true">♥</span></p></div>
   </footer>
+
+  <nav class="app-bottom-nav" aria-label="صفحات التطبيق">
+    <a class="is-active" href="index.html" aria-current="page">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.2 12 3l9 8.2h-2.8V21h-4.5v-6h-3.4v6H5.8v-9.8Z"/></svg>
+      <span>الرئيسية</span>
+    </a>
+    <a href="calendar.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h2v2h6V2h2v2h2a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2Zm-2 7v10h14V9Z"/></svg>
+      <span>التقويم</span>
+    </a>
+    <a href="statistics.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4V10H4Zm6 0h4V4h-4Zm6 0h4V7h-4Z"/></svg>
+      <span>الإحصائيات</span>
+    </a>
+  </nav>
 </body>
 </html>
