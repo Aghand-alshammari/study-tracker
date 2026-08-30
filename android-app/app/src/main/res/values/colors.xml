@@ -3,5 +3,7 @@
     <color name="yellow_light">#FFF4BF</color><color name="tiffany">#9FE7DC</color>
     <color name="pink_pastel">#F8C8DC</color><color name="purple_pastel">#D9C7F5</color>
     <color name="text_primary">#3D4655</color><color name="text_secondary">#788291</color>
-    <color name="border">#E7E1DA</color><color name="success">#65BFAF</color><color name="error">#C86779</color>
+    <color name="border">#E7E1DA</color><color name="success">#249B7B</color><color name="error">#E66F6A</color>
+    <color name="calendar_card">#FFFEFC</color><color name="activity_future">#ECEDEF</color><color name="activity_absent">#F18A84</color>
+    <color name="activity_1">#D7EEE7</color><color name="activity_2">#A9DCCB</color><color name="activity_3">#70C3AA</color><color name="activity_4">#279D7C</color><color name="today_outline">#243149</color>
 </resources>

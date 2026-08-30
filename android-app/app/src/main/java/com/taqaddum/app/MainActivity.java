@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         controller.addOnDestinationChangedListener((navController, destination, arguments) -> {
             boolean editing = destination.getId() == R.id.editSubjectFragment;
             bottomNavigation.setVisibility(editing ? View.GONE : View.VISIBLE);
-            addButton.setVisibility(editing ? View.GONE : View.VISIBLE);
+            addButton.setVisibility(destination.getId() == R.id.subjectsFragment ? View.VISIBLE : View.GONE);
         });
     }
 }

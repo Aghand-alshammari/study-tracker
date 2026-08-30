@@ -13,6 +13,8 @@ public class SubjectAdapter extends ListAdapter<Subject, SubjectAdapter.Holder> 
     public interface Listener { void onSubjectClicked(Subject subject); }
     private final Listener listener;
     public SubjectAdapter(Listener listener) { super(DIFF); this.listener = listener; }
+    public Subject subjectAt(int position) { return getItem(position); }
+    public void restore(Subject subject) { int position = getCurrentList().indexOf(subject); if (position >= 0) notifyItemChanged(position); }
     private static final DiffUtil.ItemCallback<Subject> DIFF = new DiffUtil.ItemCallback<Subject>() {
         public boolean areItemsTheSame(@NonNull Subject a,@NonNull Subject b){return a.id==b.id;}
         public boolean areContentsTheSame(@NonNull Subject a,@NonNull Subject b){return a.name.equals(b.name)&&a.weeklyTargetMinutes==b.weeklyTargetMinutes&&a.archived==b.archived&&a.colorHex.equals(b.colorHex)&&a.hasTheory==b.hasTheory&&a.hasPractical==b.hasPractical;}

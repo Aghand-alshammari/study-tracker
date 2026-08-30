@@ -2,9 +2,17 @@
     <string name="app_name">تقدّم</string><string name="subjects">المواد</string>
     <string name="home">الرئيسية</string><string name="calendar">الاستمرارية</string><string name="statistics">الإحصائيات</string>
     <string name="calendar_subtitle">كل يوم مذاكرة يصنع سلسلة أجمل</string>
+    <string name="activity_less">أقل</string><string name="activity_more">أكثر</string>
+    <string name="previous_month">الشهر السابق</string><string name="next_month">الشهر التالي</string>
+    <string name="current_streak_format">الاستمرارية الحالية\n%1$d أيام</string><string name="longest_streak_format">أطول استمرارية\n%1$d أيام</string>
+    <string name="attendance_format">الحضور\n%1$d يومًا</string><string name="absence_format">الغياب\n%1$d أيام</string>
+    <string name="future_day">يوم قادم</string><string name="today_not_studied">لم تسجل مذاكرة اليوم بعد</string><string name="absent_day">غياب</string><string name="study_minutes">مذاكرة %1$d دقيقة</string>
     <string name="calendar_empty">ابدأ المذاكرة اليوم لبناء سلسلة استمراريتك.</string>
     <string name="welcome_to_taqaddum">مرحبًا بك في تقدّم</string>
-    <string name="profile">الملف الشخصي</string><string name="settings">الإعدادات</string><string name="support">الدعم الفني</string><string name="search">بحث</string>
+    <string name="profile">الملف الشخصي</string><string name="profile_subtitle">بياناتك وإعدادات حسابك</string><string name="student">طالب مجتهد</string>
+    <string name="profile_photo">الصورة الشخصية</string><string name="add_profile_photo">إضافة صورة للملف الشخصي</string><string name="photo_access_failed">تعذر استخدام الصورة المحددة</string>
+    <string name="name">الاسم</string><string name="email">البريد الإلكتروني</string><string name="email_invalid">أدخل بريدًا إلكترونيًا صحيحًا</string><string name="profile_saved">تم حفظ الملف الشخصي</string>
+    <string name="settings">الإعدادات</string><string name="support">الدعم الفني</string><string name="search">بحث</string>
     <string name="switch_to_dark_mode">تفعيل الوضع الليلي</string><string name="switch_to_light_mode">تفعيل الوضع النهاري</string>
     <string name="cancel">إلغاء</string><string name="subject_color">لون المادة</string><string name="subject_sections">أقسام المادة</string>
     <string name="theory">نظري</string><string name="practical">عملي</string><string name="choose_section">اختر قسمًا واحدًا على الأقل</string>
@@ -22,4 +30,5 @@
     <string name="weekly_target_format">الهدف الأسبوعي: %1$d دقيقة</string>
     <string name="name_required">اكتب اسم المادة</string><string name="target_invalid">أدخل عدد ساعات أكبر من صفر</string>
     <string name="subject_saved">تم حفظ المادة</string><string name="subject_deleted">تم حذف المادة</string>
+    <string name="delete_subject_title">حذف المادة؟</string><string name="delete_subject_message">سيتم حذف المادة وجلسات المذاكرة المرتبطة بها.</string><string name="confirm_delete">حذف</string>
 </resources>
