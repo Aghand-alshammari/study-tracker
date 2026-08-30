@@ -1,0 +1,1 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"><item android:left="2dp" android:top="3dp" android:drawable="@drawable/ic_home_shadow"/><item android:right="2dp" android:bottom="3dp" android:drawable="@drawable/ic_home"/></layer-list>

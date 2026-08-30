@@ -1,6 +1,7 @@
 package com.taqaddum.app.ui.subjects;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.graphics.Color;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
@@ -14,9 +15,9 @@ public class SubjectAdapter extends ListAdapter<Subject, SubjectAdapter.Holder> 
     public SubjectAdapter(Listener listener) { super(DIFF); this.listener = listener; }
     private static final DiffUtil.ItemCallback<Subject> DIFF = new DiffUtil.ItemCallback<Subject>() {
         public boolean areItemsTheSame(@NonNull Subject a,@NonNull Subject b){return a.id==b.id;}
-        public boolean areContentsTheSame(@NonNull Subject a,@NonNull Subject b){return a.name.equals(b.name)&&a.weeklyTargetMinutes==b.weeklyTargetMinutes&&a.archived==b.archived;}
+        public boolean areContentsTheSame(@NonNull Subject a,@NonNull Subject b){return a.name.equals(b.name)&&a.weeklyTargetMinutes==b.weeklyTargetMinutes&&a.archived==b.archived&&a.colorHex.equals(b.colorHex)&&a.hasTheory==b.hasTheory&&a.hasPractical==b.hasPractical;}
     };
     @NonNull public Holder onCreateViewHolder(@NonNull ViewGroup p,int type){return new Holder(ItemSubjectBinding.inflate(LayoutInflater.from(p.getContext()),p,false));}
     public void onBindViewHolder(@NonNull Holder h,int pos){h.bind(getItem(pos));}
-    class Holder extends RecyclerView.ViewHolder { final ItemSubjectBinding b; Holder(ItemSubjectBinding b){super(b.getRoot());this.b=b;} void bind(Subject s){b.subjectName.setText(s.name);b.subjectTarget.setText(b.getRoot().getContext().getString(R.string.weekly_target_format,s.weeklyTargetMinutes));b.getRoot().setOnClickListener(v->listener.onSubjectClicked(s));}}
+    class Holder extends RecyclerView.ViewHolder { final ItemSubjectBinding b; Holder(ItemSubjectBinding b){super(b.getRoot());this.b=b;} void bind(Subject s){b.subjectName.setText(s.name);b.subjectTarget.setText(b.getRoot().getContext().getString(R.string.weekly_target_format,s.weeklyTargetMinutes));String sections=s.hasTheory&&s.hasPractical?"نظري • عملي":s.hasTheory?"نظري":"عملي";b.subjectSections.setText(sections);try{b.subjectCard.setCardBackgroundColor(Color.parseColor(s.colorHex));}catch(Exception ignored){b.subjectCard.setCardBackgroundColor(Color.parseColor("#FFF1A8"));}b.getRoot().setOnClickListener(v->listener.onSubjectClicked(s));}}
 }

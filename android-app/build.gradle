@@ -1,3 +1,15 @@
 plugins {
     id 'com.android.application' version '8.7.3' apply false
 }
+
+// Keep generated Android build files outside OneDrive. OneDrive can lock
+// resource and dex outputs while Gradle is writing them, which breaks builds.
+def localAppData = System.getenv('LOCALAPPDATA')
+def taqaddumBuildRoot = localAppData != null
+        ? new File(localAppData, 'TaqaddumBuild')
+        : new File(rootProject.projectDir, '.local-build')
+
+layout.buildDirectory.set(new File(taqaddumBuildRoot, 'root'))
+subprojects {
+    layout.buildDirectory.set(new File(taqaddumBuildRoot, project.name))
+}

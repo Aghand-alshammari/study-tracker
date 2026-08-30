@@ -11,4 +11,5 @@ public class TaqaddumApplication extends Application {
     private SubjectRepository subjectRepository;
     @Override public void onCreate() { super.onCreate(); subjectRepository = new SubjectRepository(TaqaddumDatabase.getInstance(this).subjectDao(), databaseExecutor); }
     public SubjectRepository getSubjectRepository() { return subjectRepository; }
+    public TaqaddumDatabase getDatabase() { return TaqaddumDatabase.getInstance(this); }
 }

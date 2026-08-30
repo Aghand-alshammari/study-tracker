@@ -6,6 +6,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class MainActivity extends AppCompatActivity {
     @Override protected void onCreate(Bundle state) {
         super.onCreate(state);
@@ -18,8 +19,12 @@ public class MainActivity extends AppCompatActivity {
         NavController controller = host.getNavController();
         BottomNavigationView bottomNavigation = findViewById(R.id.bottom_navigation);
         NavigationUI.setupWithNavController(bottomNavigation, controller);
-        controller.addOnDestinationChangedListener((navController, destination, arguments) ->
-                bottomNavigation.setVisibility(destination.getId() == R.id.editSubjectFragment
-                        ? View.GONE : View.VISIBLE));
+        FloatingActionButton addButton = findViewById(R.id.add_subject_fab);
+        addButton.setOnClickListener(view -> controller.navigate(R.id.editSubjectFragment));
+        controller.addOnDestinationChangedListener((navController, destination, arguments) -> {
+            boolean editing = destination.getId() == R.id.editSubjectFragment;
+            bottomNavigation.setVisibility(editing ? View.GONE : View.VISIBLE);
+            addButton.setVisibility(editing ? View.GONE : View.VISIBLE);
+        });
     }
 }

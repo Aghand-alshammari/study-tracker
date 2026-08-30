@@ -1,0 +1,7 @@
+<resources>
+    <color name="white">#171A20</color><color name="yellow_primary">#FFD966</color>
+    <color name="yellow_light">#3B3522</color><color name="tiffany">#28564F</color>
+    <color name="pink_pastel">#573B48</color><color name="purple_pastel">#443955</color>
+    <color name="text_primary">#F4F1EC</color><color name="text_secondary">#B9BEC7</color>
+    <color name="border">#343942</color><color name="success">#72CBBB</color><color name="error">#E38B9B</color>
+</resources>

@@ -1,8 +1,8 @@
 <resources><style name="Theme.Taqaddum" parent="Theme.MaterialComponents.DayNight.NoActionBar">
     <item name="colorPrimary">@color/yellow_primary</item><item name="colorPrimaryVariant">@color/yellow_primary</item>
-    <item name="colorOnPrimary">@color/text_primary</item><item name="colorSecondary">@color/yellow_primary</item>
-    <item name="colorOnSecondary">@color/text_primary</item><item name="android:colorBackground">@color/white</item>
+    <item name="colorOnPrimary">#3D4655</item><item name="colorSecondary">@color/yellow_primary</item>
+    <item name="colorOnSecondary">#3D4655</item><item name="android:colorBackground">@color/white</item>
     <item name="colorSurface">@color/white</item><item name="colorOnSurface">@color/text_primary</item>
-    <item name="android:fontFamily">sans-serif</item><item name="fontFamily">sans-serif</item><item name="android:windowLightStatusBar">true</item>
+    <item name="android:fontFamily">sans-serif</item><item name="fontFamily">sans-serif</item><item name="android:windowLightStatusBar">false</item>
     <item name="android:statusBarColor">@color/white</item>
 </style></resources>

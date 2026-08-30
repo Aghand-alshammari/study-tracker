@@ -1,6 +1,7 @@
 <resources>
-    <color name="white">#FFFFFF</color><color name="yellow_primary">#FFC928</color>
-    <color name="yellow_light">#FFF9E6</color><color name="text_primary">#1F2937</color>
-    <color name="text_secondary">#6B7280</color><color name="border">#E5E7EB</color>
-    <color name="success">#22C55E</color><color name="error">#DC2626</color>
+    <color name="white">#FFFCF8</color><color name="yellow_primary">#FFD966</color>
+    <color name="yellow_light">#FFF4BF</color><color name="tiffany">#9FE7DC</color>
+    <color name="pink_pastel">#F8C8DC</color><color name="purple_pastel">#D9C7F5</color>
+    <color name="text_primary">#3D4655</color><color name="text_secondary">#788291</color>
+    <color name="border">#E7E1DA</color><color name="success">#65BFAF</color><color name="error">#C86779</color>
 </resources>

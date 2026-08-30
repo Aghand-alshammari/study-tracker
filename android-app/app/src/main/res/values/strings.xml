@@ -1,9 +1,18 @@
 <resources>
     <string name="app_name">تقدّم</string><string name="subjects">المواد</string>
-    <string name="home">الرئيسية</string><string name="calendar">التقويم</string><string name="statistics">الإحصائيات</string>
-    <string name="calendar_subtitle">نظّم مواعيد دراستك والمهام القادمة</string>
-    <string name="calendar_empty">ستظهر هنا جلسات الدراسة والمهام المجدولة.</string>
+    <string name="home">الرئيسية</string><string name="calendar">الاستمرارية</string><string name="statistics">الإحصائيات</string>
+    <string name="calendar_subtitle">كل يوم مذاكرة يصنع سلسلة أجمل</string>
+    <string name="calendar_empty">ابدأ المذاكرة اليوم لبناء سلسلة استمراريتك.</string>
+    <string name="welcome_to_taqaddum">مرحبًا بك في تقدّم</string>
+    <string name="profile">الملف الشخصي</string><string name="settings">الإعدادات</string><string name="support">الدعم الفني</string><string name="search">بحث</string>
+    <string name="switch_to_dark_mode">تفعيل الوضع الليلي</string><string name="switch_to_light_mode">تفعيل الوضع النهاري</string>
+    <string name="cancel">إلغاء</string><string name="subject_color">لون المادة</string><string name="subject_sections">أقسام المادة</string>
+    <string name="theory">نظري</string><string name="practical">عملي</string><string name="choose_section">اختر قسمًا واحدًا على الأقل</string>
+    <string name="last_studied_never">لم تتم مذاكرة هذه المادة بعد</string><string name="last_studied_today">آخر مذاكرة: اليوم</string>
+    <string name="last_studied_days">آخر مذاكرة: منذ %1$d أيام</string><string name="streak_days">🔥 0 أيام متتالية</string>
     <string name="statistics_subtitle">تابع تقدّمك وإنجازك بمرور الوقت</string>
+    <string name="monthly_average_title">المتوسط اليومي حسب الشهر</string>
+    <string name="daily_average_hours">المتوسط اليومي: %1$s ساعة</string>
     <string name="statistics_empty">ابدأ جلساتك الدراسية لتظهر إحصائيات تقدّمك هنا.</string>
     <string name="subjects_subtitle">نظّم أهدافك الأسبوعية وابدأ بخطوة صغيرة</string>
     <string name="no_subjects_title">لا توجد مواد بعد</string><string name="no_subjects_body">أضف أول مادة وحدد الوقت الذي تريد دراسته كل أسبوع.</string>
