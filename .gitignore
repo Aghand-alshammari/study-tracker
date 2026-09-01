@@ -1,2 +1,8 @@
 .idea/
 *.iml
+android-app/.android-build/
+android-app/.codex-build/
+android-app/.gradle-build/
+android-app/.gradle-local/
+current-debug.apk
+installed-base.apk
